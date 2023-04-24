@@ -16,6 +16,8 @@ API.interceptors.request.use((req) => {
 
 export const adminSignIn = (formData) => API.post("/api/admin/login", formData);
 
+console.log(adminSignIn);
+
 export const adminUpdatePassword = (updatedPassword) =>
   API.post("/api/admin/updatepassword", updatedPassword);
 
